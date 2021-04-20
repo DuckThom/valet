@@ -203,7 +203,7 @@ class Site
         }
 
         $host = null;
-        if (preg_match('~proxy_pass\s+(?<host>https?://.*)\s*;~', $siteConf, $patterns)) {
+        if (preg_match('~set \$proxy_pass_host\s+(?<host>https?://.*)\s*;~', $siteConf, $patterns)) {
             $host = trim($patterns['host']);
         }
         return $host;
