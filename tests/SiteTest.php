@@ -332,6 +332,12 @@ class SiteTest extends Yoast\PHPUnitPolyfills\TestCases\TestCase
                 'url' => 'http://some-other-proxy.com.test',
                 'path' => 'https://127.0.0.1:8443',
             ],
+            'old-proxy-pass-syntax.com' => [
+                'site' => 'old-proxy-pass-syntax.com',
+                'secured' => '',
+                'url' => 'http://old-proxy-pass-syntax.com.test',
+                'path' => 'https://127.0.0.1:8443',
+            ],
         ], $site->proxies()->all());
     }
 
